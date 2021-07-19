@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/RockPaperScissor.css" />
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <title>Games</title>
+  </head>
+  <body>
+    <!-- ini header -->
+    <div style="width: 100%">
+      <div class="header" style="width: 100%">
+        <div class="container nopadding">
+          <div class="row">
+            <div
+              class="col-1 header-icon-angle"
+              onclick="window.location.href = '/'"
+            >
+              &lt
+            </div>
+
+            <div class="col-1 header-icon-logo" id="logo">
+              <img src="assets/logo 1.png" width="70px" height="70px" />
+            </div>
+            <div class="col-7 header-text">rock paper scissor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ini konten -->
+    <div class="container box-parent" style="width: 100%">
+      <div class="row" style="width: 100%; justify-content: center">
+        <div class="col-3 box-child nopadding">
+          <div class="box-header">
+            <h3 style="font-weight: bolder; color: black">PLAYER 1</h3>
+          </div>
+          <div class="box-grandchild user rock" id="player-rock">
+            <img src="assets/batu.png" />
+          </div>
+          <div class="box-grandchild user paper" id="player-paper">
+            <img src="assets/kertas.png" />
+          </div>
+          <div class="box-grandchild user scissor" id="player-scissor">
+            <img src="assets/gunting.png" />
+          </div>
+        </div>
+
+        <div class="col-3 box-child nopadding">
+          <div class="box-header"></div>
+          <div class="box-grandchild-middle"></div>
+          <div class="box-grandchild-middle">
+            <div class="game-state-initial states" id="initial">VS</div>
+            <div class="game-state-any-wins states" id="human-win">
+              <span>PLAYER 1</span>
+              <br />
+              <span>WIN</span>
+            </div>
+            <div class="game-state-any-wins states" id="comp-win">
+              <span style="width: 100%">COM</span>
+              <br />
+              <span>win</span>
+            </div>
+            <div class="game-state-draw states" id="draw">DRAW</div>
+          </div>
+          <div class="box-grandchild"></div>
+        </div>
+
+        <div class="col-3 box-child nopadding">
+          <div class="box-header">
+            <h3 style="font-weight: bolder; color: black">COM</h3>
+          </div>
+          <div class="box-grandchild comp rock" id="comp-rock">
+            <img src="assets/batu.png" />
+          </div>
+          <div class="box-grandchild comp paper" id="comp-paper">
+            <img src="assets/kertas.png" />
+          </div>
+          <div class="box-grandchild comp scissor" id="comp-scissor">
+            <img src="assets/gunting.png" />
+          </div>
+        </div>
+      </div>
+      <div class="refresh-button" id="refresh-btn"></div>
+    </div>
+  </body>
+  <script src="js/RPS_DOM.js"></script>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "username": "Agnes",
+    "password": "Marcella",
+    "email": "agnes@gmail.com"
+  },
+  {
+    "id": 2,
+    "username": "Sensei",
+    "password": "BelajarSupayaPintar",
+    "email": "sensei@gmail.com"
+  },
+  {
+    "id": 3,
+    "username": "Roger",
+    "password": "WoofWoof",
+    "email": "roger@gmail.com"
+  }
+]
